@@ -1,5 +1,5 @@
 "use strict";
-
+//stringify goes from object/array to a string
 let job = {
     title : "Web Designer",
     startDate : "October 2022",
