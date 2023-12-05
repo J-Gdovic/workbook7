@@ -1,0 +1,57 @@
+#kanyeQuoteDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  color: blueviolet;
+}
+
+#quoteButton {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  color: blueviolet;
+  background-color: rgb(153, 234, 149);
+  border-radius: 1%;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  color: blueviolet;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: blueviolet;
+}
+
+body {
+  background-color: rgb(207, 219, 219);
+}
+
+nav {
+  display: flex;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+#saveButton {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  color: blueviolet;
+  background-color: rgb(153, 234, 149);
+  border-radius: 1%;
+}
+
+#saveQuoteDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  color: blueviolet;
+}
