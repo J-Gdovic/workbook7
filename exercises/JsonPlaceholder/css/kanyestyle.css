@@ -12,7 +12,8 @@
   margin-top: 3rem;
   color: blueviolet;
   background-color: rgb(153, 234, 149);
-  border-radius: 1%;
+  border-radius: 10%;
+  border-style: hidden;
 }
 
 h3 {
@@ -47,6 +48,7 @@ nav {
   color: blueviolet;
   background-color: rgb(153, 234, 149);
   border-radius: 1%;
+  border-style: hidden;
 }
 
 #saveQuoteDiv {
