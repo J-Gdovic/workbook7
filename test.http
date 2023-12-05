@@ -1,1 +1,11 @@
-GET https://jsonplaceholder.typicode.com/posts
+ GET https://jsonplaceholder.typicode.com/todos/1
+
+# GET  https://jsonplaceholder.typicode.com/todos
+
+# GET  https://jsonplaceholder.typicode.com/albums
+
+# GET  https://jsonplaceholder.typicode.com/todos
+
+# GET  https://jsonplaceholder.typicode.com/comments
+
+# GET  https://jsonplaceholder.typicode.com/comments/3
