@@ -2,7 +2,9 @@
   display: flex;
   justify-content: center;
   margin-top: 3rem;
-  color: blueviolet;
+  font-family: Arial, Helvetica, sans-serif;
+
+  
 }
 
 #quoteButton {
@@ -10,34 +12,39 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
-  color: blueviolet;
-  background-color: rgb(153, 234, 149);
+  background-color: rgb(215, 142, 77);
   border-radius: 10%;
-  border-style: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+
+ 
 }
 
 h3 {
   display: flex;
-  justify-content: center;
-  margin-top: 3rem;
-  color: blueviolet;
+  font-family: Arial, Helvetica, sans-serif;
+ 
 }
 
 h1 {
   display: flex;
   justify-content: center;
-  color: blueviolet;
+  font-family: Arial, Helvetica, sans-serif;
+
+ 
 }
 
 body {
-  background-color: rgb(207, 219, 219);
+  background-color: rgb(215, 142, 77);
 }
 
-nav {
+nav,a {
   display: flex;
   margin-left: 3rem;
   margin-top: 1rem;
-  margin-bottom: 3rem;
+  color: black;
+  text-decoration:none;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
 #saveButton {
@@ -45,15 +52,29 @@ nav {
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
-  color: blueviolet;
-  background-color: rgb(153, 234, 149);
+  background-color: rgb(215, 142, 77);
   border-radius: 1%;
-  border-style: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+
+  
 }
 
 #saveQuoteDiv {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
-  color: blueviolet;
+  font-family: Arial, Helvetica, sans-serif;
+
+ 
+}
+
+#clearSavedQuoteButton{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  background-color: rgb(215, 142, 77);
+  border-radius: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
