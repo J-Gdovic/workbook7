@@ -6,7 +6,7 @@ function loadCourseTable() {
   fetch("http://localhost:8081/api/courses")
     .then((response) => response.json())
     .then((coursesArray) => {
-      //   console.log(data);
+
       for (let course of coursesArray) {
         let tableRow = coursesTbody.insertRow(-1);
 
