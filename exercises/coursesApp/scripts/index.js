@@ -1,7 +1,6 @@
 "use strict";
 
 let coursesTbody = document.querySelector("#coursesTbody");
- 
 
 function loadCourseTable() {
   fetch("http://localhost:8081/api/courses")
