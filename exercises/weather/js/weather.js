@@ -8,6 +8,7 @@ let cities = [
 ];
 let citySelectDropDown = document.querySelector("#citySelectDropDown");
 let forcastTbody = document.querySelector("#forcastTbody");
+let selectedCity = "";
 
 // city drop down
 function loadCityDropDown() {
@@ -20,28 +21,42 @@ function loadCityDropDown() {
 }
 loadCityDropDown();
 
+
+
 // set up api
 function loadWeatherData() {
-  let selectedCity = citySelectDropDown.value;
+  let selectedValue = citySelectDropDown.value;
+  for (let city of cities) {
+    if (selectedValue == city.id) {
+      selectedCity = city;
+    }
+  }
 
-  fetch(`"https://api.weather.gov/points/"${selectedCity.latitude},${selectedCity.longitude}`)
+  fetch(`https://api.weather.gov/points/${selectedCity.latitude},${selectedCity.longitude}`)
     .then((response) => response.json())
-    .then((data) => {
-      return data;
-    });
-  fetch("https://api.weather.gov/gridpoints/TOP/`/forecast")
-    .then((response) => response.json())
-    .then((data) => {
-      return data;
+    .then((data) => { console.log(data);
+      return fetch(`${data.properties.forecast}`);
+    })
+    .then((response2) => response2.json())
+    .then((data2) => {
+      for (let period of data2.properties.periods) {
+        let tableRow = forcastTbody.insertRow();
+
+        let td1 = tableRow.insertCell();
+        td1.innnerText = period.name;
+
+        let td2 = tableRow.insertCell();
+        td2.innerText = period.tempurature;
+      }
     });
 }
-
+loadWeatherData();
 //https://api.weather.gov/gridpoints/TOP/31,80/forecast //link for data
 
-function changeCityWeather() {
-  forcastTbody.innerHTML = " ";
-  const citySelected = citySelectDropDown.value;
-  loadWeatherData(citySelected);
-}
+// function changeCityWeather() {
+//   forcastTbody.innerHTML = " ";
+//   const citySelected = citySelectDropDown.value;
+//   loadWeatherData(citySelected);
+// }
 
-citySelectDropDown.onchange = changeCityWeather;
+// citySelectDropDown.onchange = changeCityWeather;
