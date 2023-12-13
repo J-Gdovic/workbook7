@@ -28,8 +28,8 @@ function fetchCategoryData() {
   fetch("http://localhost:8081/api/categories")
     .then((response) => response.json())
     .then((categoryArray) => {
-      console.log(categoryArray);
-      // return categoryArray;
+      // console.log(categoryArray);
+      return categoryArray;
     });
 }
 
